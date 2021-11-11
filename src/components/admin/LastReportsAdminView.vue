@@ -1,6 +1,6 @@
 <template>
     <div class="last-reports-admin-view">
-        <h1>Componente de Ultimos reportes</h1>
+        <h1>Componente dos Ultimos reportes</h1>
     </div>
 </template>
 

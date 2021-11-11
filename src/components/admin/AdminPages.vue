@@ -25,7 +25,7 @@
 
 <script>
 import PageTitle from '../template/PageTitle.vue'
-import LastReportsAdminView from './TransportCategory.vue'
+import LastReportsAdminView from './LastReportsAdminView.vue'
 import UserAdmin from './UserAdmin.vue'
 import TransportCategory from './TransportCategory.vue'
 import ReportCategory from './ReportCategory.vue'
