@@ -24,7 +24,7 @@
         </b-form>
         <hr>
         <b-table hover striped :items="transports" :fields="fields">
-            <template slot="cell(actions)" slot-scope="data">
+            <template slot="cell(actions)" slot-scope="data" class="text-left">
                 <b-button variant="warning" @click="loadTransport(data.item)" class="mr-2">
                     <i class="fa fa-pencil"></i>
                 </b-button>
