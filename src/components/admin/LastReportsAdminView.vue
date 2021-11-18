@@ -11,7 +11,7 @@
             </b-row>
         </b-form>
         <hr>
-        <b-table hover striped :items="reports" :fields="fields">
+        <b-table stacked="sm" hover striped :items="reports" :fields="fields">
             <template slot="cell(actions)" slot-scope="data" class="text-left">
                 <b-button variant="danger" @click="loadReport(data.item, 'remove')">
                     <i class="fa fa-trash"></i>

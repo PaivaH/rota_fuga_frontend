@@ -1,8 +1,10 @@
 <template>
     <header class="header">
+        <!--
         <a class="toggle" @click="toggleMenu" v-if="!hideToggle">
             <i class="fa fa-lg" :class="icon"></i>
         </a>
+        -->
         <h1 class="title">
             <router-link to="/">
                 {{ title }} 
@@ -65,6 +67,7 @@ export default {
         text-decoration: none;
     }
 
+    /*
     header.header > a.toggle {
         width: 60px;
         height: 100%;
@@ -82,5 +85,6 @@ export default {
         color: #fff;
         background-color: rgba(0, 0, 0, 0.2);
     }
+    */
 
 </style>
