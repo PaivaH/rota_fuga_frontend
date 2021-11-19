@@ -4,16 +4,16 @@
             <input id="report-user_id" type="hidden" v-model="report.user_id" />
             <b-row>
                 <b-col sm="10">
-                    <b-form-group label="Descrição:" label-for="report-description">
+                    <b-form-group label="*Descrição:" label-for="report-description">
                         <b-form-input id="report-description" type="text"
                             v-model="report.description" required
-                            placeholder="Informe uma descrição para o reporte..." />
+                            placeholder="Escreva aqui uma descrição para seu reporte" />
                     </b-form-group>
                 </b-col>
             </b-row>
             <b-row>
                 <b-col sm="5">
-                    <b-form-group label="Data:" label-for="report-occurrence_date">
+                    <b-form-group label="*Data:" label-for="report-occurrence_date">
                         <b-form-input id="report-occurrence_date" type="date"
                             v-model="report.occurrence_date" required
                         />
@@ -23,55 +23,56 @@
             <b-row>
                 <b-col sm="3">
                     <b-form-group 
-                    label="Tipo de reporte:" label-for="report-report_type">
+                    label="*Tipo de reporte:" label-for="report-report_type">
                     <b-form-select id="report-report_type"
-                    :options="reportTypes" v-model="report.report_type" />
+                    :options="reportTypes" v-model="report.report_type" required/>
                     </b-form-group>
                 </b-col>
                 <b-col sm="3">
                     <b-form-group 
-                    label="Tipo de transporte:" label-for="report-transport_type">
+                    label="*Tipo de transporte:" label-for="report-transport_type">
                     <b-form-select id="report-transport_type"
-                    :options="transports" v-model="report.transport_type" />
+                        :options="transports" v-model="report.transport_type" required/>
                     </b-form-group>
                 </b-col>
                 <b-col sm="2">
                     <b-form-group label="Linha:" label-for="report-transport_line">
                         <b-form-input id="report-transport_line" type="text"
                             v-model="report.transport_line"
-                            placeholder="Informe uma linha" />
+                            placeholder="Informe uma linha" 
+                        />
                     </b-form-group>
                 </b-col>
             </b-row>
             <b-row>
                 <b-col sm="3">
-                    <b-form-group label="Cidade:" label-for="report-cidade">
+                    <b-form-group label="*Cidade:" label-for="report-cidade">
                         <b-form-input id="report-cidade" type="text"
-                            v-model="report.cidade"
+                            v-model="report.cidade" required
                         />
                     </b-form-group>
                 </b-col>
                 <b-col sm="3">
-                    <b-form-group label="Bairro:" label-for="report-bairro">
+                    <b-form-group label="*Bairro:" label-for="report-bairro">
                         <b-form-input id="report-bairro" type="text"
-                            v-model="report.bairro"
+                            v-model="report.bairro" required
                         />
                     </b-form-group>
                 </b-col>
                 <b-col sm="1">
-                    <b-form-group label="UF:" label-for="report-uf">
+                    <b-form-group label="*UF:" label-for="report-uf">
                         <b-form-input id="report-uf" type="text"
-                            v-model="report.uf"
+                            v-model="report.uf" required
                         />
                     </b-form-group>
                 </b-col>
             </b-row>
             <b-row>
                 <b-col sm="3">
-                    <b-form-group label="logradouro:" label-for="report-logradouro">
+                    <b-form-group label="Logradouro:" label-for="report-logradouro">
                         <b-form-input id="report-logradouro" type="text"
                             v-model="report.logradouro"
-                            placeholder="Informe uma linha" />
+                            />
                     </b-form-group>
                 </b-col>
                 <b-col sm="1">

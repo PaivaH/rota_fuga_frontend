@@ -14,7 +14,7 @@
                     <b-tab title="Categorias de transporte">
                         <TransportCategory />
                     </b-tab>
-                    <b-tab title="Usuarios">
+                    <b-tab title="Usuários">
                         <UserAdmin />
                     </b-tab>
                 </b-tabs>

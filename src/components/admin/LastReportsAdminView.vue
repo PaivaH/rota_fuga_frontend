@@ -6,7 +6,8 @@
                 <b-col xs="12">
                     <b-button variant="danger" v-if="mode === 'remove'"
                         @click="remove">Excluir</b-button>
-                    <b-button class="ml-2" @click="reset">Cancelar</b-button>
+                    <b-button class="ml-2" v-if="mode === 'remove'"
+                        @click="reset">Cancelar</b-button>
                 </b-col>
             </b-row>
         </b-form>
@@ -48,7 +49,7 @@ export default {
                     formatter: value => moment(String(value)).format('MM/DD/YYYY hh:mm') },
                 { key: 'user_id', label: 'user', sortable: true },
                 { key: 'logradouro', label: 'Logradouro', sortable: true },
-                { key: 'numero', label: 'Numero', sortable: true },
+                { key: 'numero', label: 'Número', sortable: true },
                 { key: 'bairro', label: 'Bairro', sortable: true },
                 { key: 'bairro', label: 'Cidade', sortable: true },
                 { key: 'uf', label: 'UF', sortable: true },

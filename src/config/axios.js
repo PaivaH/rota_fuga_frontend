@@ -5,7 +5,7 @@ const error = err => {
     if (401=== err.response.status) {
         window.location = '/'
     } else {
-        return Promisse.reject(err)
+        return Promise.reject(err)
     }
 }
 

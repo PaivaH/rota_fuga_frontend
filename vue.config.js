@@ -3,9 +3,10 @@ module.exports = {
         disableHostCheck: true
     },
     pwa: {
-        name: 'My App',
+        name: 'Rota de fuga',
         themeColor: '#4DBA87',
         msTileColor: '#000000',
+        start_url: '/',
         appleMobileWebAppCapable: 'yes',
         appleMobileWebAppStatusBarStyle: 'black',
     
