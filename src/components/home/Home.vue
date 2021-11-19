@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { baseApiUrl, showError } from '@/global'
+import { baseApiUrl } from '@/global'
 import axios from 'axios'
 import moment from 'moment'
 
@@ -41,7 +41,7 @@ export default {
                 { key: 'numero', label: 'Numero', sortable: true },
                 { key: 'bairro', label: 'Bairro', sortable: true },
                 { key: 'bairro', label: 'Cidade', sortable: true },
-                { key: 'uf', label: 'UF', sortable: true },
+                { key: 'uf', label: 'UF', sortable: true }
             ]
         }
     },

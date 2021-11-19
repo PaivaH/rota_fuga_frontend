@@ -121,7 +121,6 @@ export default {
             const json = localStorage.getItem(userKey)
             const user = JSON.parse(json)
             this.report.user_id = user.id   
-            console.log(this.report.user_id)
         },
         save() {
             axios.post(`${baseApiUrl}/report`, this.report)
