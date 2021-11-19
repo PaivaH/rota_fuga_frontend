@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '../components/home/Home'
 import AdminPages from '../components/admin/AdminPages'
 import Auth from '../components/auth/Auth'
+import ReportForm from '../components/report/ReportForm'
 
 import { userKey } from '@/global'
 
@@ -23,6 +24,10 @@ const routes = [{
     name: 'auth',
     path: '/auth',
     component: Auth
+},{
+    name: 'report',
+    path: '/report',
+    component: ReportForm
 }]
 
 const router = new VueRouter({

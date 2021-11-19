@@ -8,11 +8,11 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@vue/cli-plugin-pwa": "^4.5.15",
     "axios": "^0.24.0",
     "bootstrap-vue": "^2.21.2",
     "font-awesome": "4.7.0",
     "moment": "^2.29.1",
+    "register-service-worker": "^1.7.1",
     "vue": "2.5.17",
     "vue-gravatar": "1.2.1",
     "vue-mq": "0.2.1",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "3.0.1",
     "@vue/cli-plugin-eslint": "3.0.1",
+    "@vue/cli-plugin-pwa": "^4.5.15",
     "@vue/cli-service": "3.0.1",
     "vue-template-compiler": "2.5.17"
   },

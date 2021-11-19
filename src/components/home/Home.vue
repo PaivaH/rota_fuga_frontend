@@ -1,11 +1,13 @@
 <template>
     <div class="home">
         <PageTitle icon="fa fa-home" main="Dashboard"
-            sub="Base de conhecimento" />
+            sub="Ultimos reportes" />
         <b-table stacked="sm" hover striped :items="reports" :fields="fields">
         </b-table>
-        <b-button class="new-report" variant="primary" >
-            Novo reporte
+        <b-button class="new-report">
+            <router-link to="/report" class="report-text">
+                <i class="fa fa-cogs"></i> Novo reporte
+            </router-link>
         </b-button>
         <b-pagination size="md" v-model="page" :total-rows="count" :per-page="limit" />
     </div>
@@ -34,7 +36,7 @@ export default {
                 { key: 'name', label: 'Transporte', sortable: true },
                 { key: 'transport_line', label: 'Linha', sortable: true },
                 { key: 'reported_date', label: 'Data do reporte', sortable: true,
-                    formatter: value => moment(String(value)).format('MM/DD/YYYY hh:mm') },
+                    formatter: value => moment(String(value)).format('DD/MM/YYYY hh:mm') },
                 { key: 'logradouro', label: 'Logradouro', sortable: true },
                 { key: 'numero', label: 'Numero', sortable: true },
                 { key: 'bairro', label: 'Bairro', sortable: true },
@@ -68,5 +70,10 @@ export default {
 <style>
     .new-report {
         margin: 15px 0;
+    }
+
+    .report-text {
+        text-decoration: none;
+        color: #FFF;
     }
 </style>

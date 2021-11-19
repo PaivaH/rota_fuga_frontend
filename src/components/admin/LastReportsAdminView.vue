@@ -40,7 +40,7 @@ export default {
             fields: [
                 { key: 'id', label: 'Código', sortable: true },
                 { key: 'description', label: 'Descrição', sortable: true },
-                { key: 'transport_id', label: 'Id do transporte', sortable: true },
+                { key: 'transport_type', label: 'Id do transporte', sortable: true },
                 { key: 'transport_line', label: 'Linha do transporte', sortable: true },
                 { key: 'occurrence_date', label: 'Data da ocorrencia', sortable: true ,
                     formatter: value => moment(String(value)).format('MM/DD/YYYY hh:mm') },

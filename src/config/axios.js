@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const sucess = res => res
 const error = err => {
-    if (401=== err.resonse.status) {
+    if (401=== err.response.status) {
         window.location = '/'
     } else {
         return Promisse.reject(err)

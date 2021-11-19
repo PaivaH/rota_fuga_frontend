@@ -8,7 +8,7 @@
                         <b-form-input id="reportType-name" type="text"
                             v-model="reportType.name" required
                             :readonly="mode === 'remove'"
-                            placeholder="Informe a cetegoria de reporte..." />
+                            placeholder="Informe a categoria de reporte..." />
                     </b-form-group>
                 </b-col>
             </b-row>
@@ -49,13 +49,15 @@ export default {
     data: function() {
         return {
             mode: 'save',
-            reportType: {},
+            reportType: {
+                sensible: false
+            },
             reportTypes: [],
             fields: [
                 { key: 'id', label: 'Código', sortable: true },
                 { key: 'name', label: 'Nome', sortable: true },
-                { key: 'sensible', label: 'Reporte pessoal', sortable: true,
-                    formatter: value => value ? 'Sim' : 'Não' },
+                { key: 'sensible', label: 'Reporte pessoal?', sortable: true,
+                    formatter: value => value ? 'Sim' : 'Nao' },
                 { key: 'actions', label: 'Ações' }
             ]
         }
